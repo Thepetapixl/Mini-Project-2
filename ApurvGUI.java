@@ -203,7 +203,7 @@ public class ApurvGUI extends JFrame {
 				try {
 					
 					Class.forName("com.mysql.jdbc.Driver");
-					Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Agrodec","root","Apurv@12345");
+					Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Agrodec","<Username>","<password>");
 					Statement stmt = con.createStatement();
 					ResultSet rs = stmt.executeQuery("select * from CropInfo where Rainfall = '"+ s1 + "' and ph = '"+ s2 +"'and SoilType = '"+ s3 +"' ");
 					
